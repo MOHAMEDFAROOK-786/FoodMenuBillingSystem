@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+
+}
+h1 {
+  text-align: center;
+  color: #f0eaea;
+  background-color: rgb(10, 85, 4);
+  margin-top: 20px;
+}
+.flex-item .but{
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(8, 25, 100);
+  border-radius: 5px;
+}
+.flex-item1 .but{
+   padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(8, 25, 100);
+  border-radius: 5px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: normal;
+  align-content: stretch;
+  
+}
+.flex-item1 {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(199, 195, 195);
+}
+.f1{
+  width: 400px;
+}
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: normal;
+  align-content: stretch;
+ 
+  margin-top: 20px;
+}
+.input input{
+  margin-top: 20px;
+  padding: 10px;
+ border-radius: 5px;
+}
+
+
+.input .but{
+  margin-top:20px ;
+  width: 10vw;
+  border-radius: 5px;
+}
+.but1{
+  margin-top:20px ;
+  color: rgb(255, 255, 255);
+  background-color: rgb(8, 25, 100);
+  width: 9vw;
+  border-radius: 5px;
+  font-size: medium;
+  padding: 5px;
+}
+.input label{
+  color: green;
+ 
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  
+ 
+}
+
+.item-price {
+  color: #888;
+}
+.item input {
+  margin-top: 8px;
+  padding: 5px;
+ width: 30px;
+  height: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+#showBill{
+  margin-top: 20px;
+  font-size: large;
+  font-weight: bold;
+  color: green;
+}
+.edit-btn{
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 5px;
+  height: 35px;
+  width: 60px;
+  background-color: rgb(58, 58, 55);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.edit-butt{
+  
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 35px;
+  width: 60px;
+  background-color: rgb(58, 58, 55);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive mobile improvements */
+/* Use box-sizing to simplify width calculations */
+
+
+@media (max-width: 768px) {
+  body { font-weight: 600; }
+  h1 { font-size: 1.5rem; margin-top: 12px; padding: 8px 0; }
+
+  .flex-container,
+  .flex-container1 {
+    flex-direction: column;
+    align-items: space-around;
+    gap: 8px;
+  }
+
+  .flex-item1 {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+   
+
+  .input input {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+  }
+
+  .input .but,
+  .flex-item .but,
+  .flex-item1 .but,
+  .but1 {
+    width: 100% !important;
+    display: block;
+    padding: 10px 12px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  .item {
+    flex-direction: row;
+    align-items: space-around;
+    gap: 8px;
+  }
+
+  .item input {
+    width: 60px;
+    height: 34px;
+    font-size: 16px;
+  }
+
+  .edit-btn {
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+  }
+
+  #showBill { font-size: 1.05rem; }
+}
+
+@media (max-width: 420px) {
+  h1 { font-size: 1.25rem; }
+  .flex-item1 { width: 100%; margin: 8px 0; padding: 12px; }
+  .item input { width: 50px; }
+  .input .but, .but1 { font-size: 16px; padding: 10px; }
+}
+
+
