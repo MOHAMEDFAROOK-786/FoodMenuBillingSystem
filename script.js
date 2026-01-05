@@ -7,7 +7,7 @@ function saveMenu(){
 
 function renderItem(item, index){
     const itemview = document.getElementById('itemView');
-    itemview.innerHTML += `<div class="item" onclick="bill(${index})" data-index="${index}"><h3>${item.name}</h3><p>Price: $${item.price}</p><div> <button class="edit-btn" onclick="updateItem(${index})">Edit</button> <button class="edit-btn" onclick="deleteItem(${index})">Delete</button></div></div>`;
+    itemview.innerHTML += `<div class="item" onclick="bill(${index})" data-index="${index}"><h3>${item.name}</h3><p>Price: $${item.price}</p><div> <button class="edit-btn" onclick="updateItem(${index})">Edit</button> <button class="edit-btn" onclick="deleteitem(${index})">Delete</button></div></div>`;
 }
 
 function updateItem(index){
@@ -21,7 +21,7 @@ function updateItem(index){
     loadMenu();
 }
 
-function deleteItem(index){
+function deleteitem(index){
     if(!confirm('Delete this item?')) return;
     menu.splice(index, 1);
     saveMenu();
